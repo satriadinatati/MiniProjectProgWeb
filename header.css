@@ -77,10 +77,15 @@ main .posts{
 main .posts .conten{
 	width: 20%;
 	margin: 20px;
+	transition: .2s ease;
+}
+main .posts .conten:hover{
+	box-shadow: 2px 10px 18px #888888;
+	/*border-radius: 20px;*/
 }
 main .posts .conten img{
 	width: 100%;
 }
 main .posts .conten .text{
-	padding: 10px;
+	padding: 30px;
 }
