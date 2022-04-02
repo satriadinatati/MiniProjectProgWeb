@@ -14,7 +14,7 @@ body{
 	border-radius: 10px;
 	transition: ease-in .2s;
 	cursor: pointer;
-	box-shadow: 0px 18px 10px #888888;
+	box-shadow: 0px 2px 10px #888888;
 }
 .btn:hover{
 	background: #002E5B;
@@ -125,7 +125,7 @@ main .data .conten{
 	width: 30%;
 	padding: 50px;
 	margin: 10px;
-	border-radius: 20px 0px 20px 0px;
+	border-radius: 20px 5px 20px 5px;
 	transition: .2s ease;
 }
 main .data .conten:hover{
