@@ -4,7 +4,35 @@ body{
     height: 100%;
     background-color: #0101;
 }
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 
+}
+.left{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.left a, .right a{
+    padding: 5px;
+    text-decoration: none;
+    color: #000000a6;
+    margin: 0px 20px;
+    transition: ease-out, .2s;
+}
+
+.left a:hover, .right a:hover{
+    color: #00000061;
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
 .container{
     width: 100%;
     padding: 30px;
@@ -18,38 +46,58 @@ body{
     border-radius: 6px;
     cursor: pointer;
     border: none;
-    box-shadow: 4px 4px 6px rgba(0,0,0,.5);
+    /*box-shadow: 2px 2px 8px rgba(0,0,0,.5);*/
 }
 
 .btn-primary{
-    background-color: darkslateblue;
+    background-color: darkblue;
     color:white;
     transition: ease-out .3s;
 }
 
 .btn-primary:hover{
-    background-color: darkblue;
+    background-color: darkslateblue;
+    box-shadow:none;
+}
+
+.btn-danger{
+    background-color: red;
+    color:white;
+    transition: ease-out .3s;
+}
+
+.btn-danger:hover{
+    background-color: salmon;
     box-shadow:none;
 }
 
 .card{
     margin: auto;
-    width: 80%;
     background-color: white;
     padding: 30px;
     border-radius: 0px 20px 0px 20px;
 
 }
+.card-body{
+    margin: 10px;
+    padding: 20px;
+}
 
 .card-30{
-    width: 30%;
+    max-width: 30%;
 }
+
+.card-50{
+    max-width: 50%;
+    width: auto;
+}
+
 .card-mid{
     position: relative;
     top: 100px;
 }
 .card-title{
-    background-color: #0102;
+    background-color: #7b7b7b21;
     padding: 20px;
     font-weight: bold;
     font-size: 20px;
@@ -74,4 +122,14 @@ body{
     border: 1px solid grey;
     width: 100%;
     margin: 0;
+}
+.table{
+    border-collapse: collapse;
+    margin: auto;
+    box-sizing: border-box;
+    width: 100%;
+}
+.table th, td{
+    border: 1px solid black;
+    padding: 10px;
 }

@@ -92,7 +92,7 @@ header .search a{
 	z-index: 0;
 	width: 100%;
 	height: 900px;
-	background-image: url('../assets/banner/banner_3.png');
+	background-image: url('../banner/banner_3.png');
 	background-size: cover;
 	filter: brightness(.4);
 	border-radius: 0 0 90px 0;
