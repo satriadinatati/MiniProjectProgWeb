@@ -19,6 +19,7 @@
         <div class="card card-50 card-mid">
             <div class="card-title">Data Alat</div>
             <div class="card-body">
+                <a href="add.php" class="btn btn-primary">Add Data</a>
                 <table class="table" >
                     <thead>
                         <th>No</th>
