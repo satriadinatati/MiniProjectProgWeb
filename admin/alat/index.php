@@ -7,14 +7,35 @@
     <title>Admin Panel</title>
     <link rel="stylesheet" type="text/css" href="../../assets/css/admin.css">
 </head>
+<?php 
+    require_once("../config.php");
+ ?>
+
 <?php
 // session_start();
 // if ($_SESSION==null) {
 //     header("location: auth/login.php");
 // }
 ?>
+
+<?php 
+// get data from table
+$query = "SELECT * FROM alat";
+$get = mysqli_query($conn, $query);
+
+ ?>
 <body>
-    <?php require_once("../header.php") ?>
+    <div class="header">
+        <div class="left">
+            <a href="../tipe">Tipe Olahraga</a>
+            <a href="index.php">Alat Olahraga</a>
+            <a href="../instruktur">Instruktur Olahraga</a>
+            <a href="../olahraga">Post Olahraga</a>
+        </div>
+        <div class="right">
+            <a href="">Logout</a>
+        </div>
+    </div>
     <div class="container">
         <div class="card card-50 card-mid">
             <div class="card-title">Data Alat</div>
@@ -27,14 +48,16 @@
                         <th>Action</th>
                     </thead>
                     <tbody>
+                        <?php $no=1; while ($row = mysqli_fetch_assoc($get)){ ?>
                         <tr>
-                            <td>1</td>
-                            <td>Karpet</td>
+                            <td><?php echo $no  ?></td>
+                            <td><?php echo $row['nama_alat'] ?></td>
                             <td>
-                                <a class="btn btn-primary">Edit</a>
-                                <a class="btn btn-danger">Delete</a>
+                                <a href="edit.php?id=<?php echo $row['id_alat'] ?>"  class="btn btn-primary">Edit</a>
+                                <a href="href="delete.php?id=<?php echo $row['id_alat'] ?>"" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
+                        <?php } ?>
                     </tbody>
                 </table>
             </div>

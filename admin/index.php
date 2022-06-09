@@ -14,7 +14,19 @@
 // }
 ?>
 <body>
-    <?php require_once("header.php") ?>
+    
+    <div class="header">
+        <div class="left">
+            <a href="tipe">Tipe Olahraga</a>
+            <a href="alat">Alat Olahraga</a>
+            <a href="instruktur">Instruktur Olahraga</a>
+            <a href="olahraga">Post Olahraga</a>
+        </div>
+        <div class="right">
+            <a href="">Logout</a>
+        </div>
+    </div>
+
     <div class="container">
         <div class="card card-30 card-mid">
             <div class="card-title">Home</div>
