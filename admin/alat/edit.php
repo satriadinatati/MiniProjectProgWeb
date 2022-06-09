@@ -13,6 +13,20 @@
 //     header("location: auth/login.php");
 // }
 ?>
+<?php 
+require_once("../config.php");
+
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+    // echo $id;
+    $sql = "SELECT * FROM alat WHERE id_alat=".$id.";";
+    $query = mysqli_query($conn, $sql);
+    $result = mysqli_fetch_assoc($query);
+    mysqli_close($conn);
+}
+
+
+ ?>
 <body>
     <div class="header">
         <div class="left">
@@ -28,12 +42,13 @@
     
     <div class="container">
         <div class="card card-50 card-mid">
-            <div class="card-title">Tambah Data Alat</div>
+            <div class="card-title">Edit Data Alat</div>
             <div class="card-body">
-                <form class="form" method="post" action="store.php" >
+                <form class="form" method="post" action="update.php" >
+                    <input type="hidden" name="id_alat" value="<?php echo $result['id_alat'] ?>">
                     <div class="form-input">
                         <label for="nama_alat">Nama Alat</label>
-                        <input class="input" name="nama_alat" id="nama_alat" type="text" placeholder="Nama Alat">
+                        <input class="input" name="nama_alat" id="nama_alat" type="text" value="<?php echo $result['nama_alat'] ?>" placeholder="Nama Alat">
                     </div>
 
                     <div class="form-input">

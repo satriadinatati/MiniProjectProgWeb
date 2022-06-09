@@ -20,8 +20,9 @@
 
 <?php 
 // get data from table
-$query = "SELECT * FROM alat";
-$get = mysqli_query($conn, $query);
+$sql = "SELECT * FROM alat";
+$query = mysqli_query($conn, $sql);
+mysqli_close($conn);
 
  ?>
 <body>
@@ -48,20 +49,28 @@ $get = mysqli_query($conn, $query);
                         <th>Action</th>
                     </thead>
                     <tbody>
-                        <?php $no=1; while ($row = mysqli_fetch_assoc($get)){ ?>
+                        <?php $no=1; while ($row = mysqli_fetch_assoc($query)){ ?>
                         <tr>
                             <td><?php echo $no  ?></td>
                             <td><?php echo $row['nama_alat'] ?></td>
                             <td>
                                 <a href="edit.php?id=<?php echo $row['id_alat'] ?>"  class="btn btn-primary">Edit</a>
-                                <a href="href="delete.php?id=<?php echo $row['id_alat'] ?>"" class="btn btn-danger">Delete</a>
+                                <a onclick="hapus(<?php echo $row['id_alat']; ?>)" class="btn btn-danger">Delete</a>
                             </td>
                         </tr>
-                        <?php } ?>
+                        <?php $no++; } ?>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
 </body>
+<script>
+    function hapus(id){
+        confirm = window.confirm("Sure ?");
+        if (confirm) {
+            window.location.href = 'delete.php?id='+id;
+        }
+    }
+</script>
 </html>
