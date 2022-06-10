@@ -33,7 +33,7 @@
                 <form class="form" method="post" action="store.php" >
                     <div class="form-input">
                         <label for="nama_instruktur">Nama Instruktur</label>
-                        <input class="input" name="nama_instruktur" id="nama_instruktur" type="text" placeholder="Nama Instruktur">
+                        <input class="input" required name="nama_instruktur" id="nama_instruktur" type="text" placeholder="Nama Instruktur">
                     </div>
 
                     <div class="form-input">

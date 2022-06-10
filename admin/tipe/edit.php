@@ -42,7 +42,7 @@ if (isset($_GET['id'])) {
     
     <div class="container">
         <div class="card card-50 card-mid">
-            <div class="card-title">Edit Data Tipe</div>
+            <div class="card-title">Edit Data Tipe Olahraga</div>
             <div class="card-body">
                 <form class="form" method="post" action="update.php" >
                     <input type="hidden" name="id_tipe" value="<?php echo $result['id_tipe'] ?>">

@@ -28,12 +28,12 @@
     
     <div class="container">
         <div class="card card-50 card-mid">
-            <div class="card-title">Tambah Data Tipe</div>
+            <div class="card-title">Tambah Data Tipe Olahraga</div>
             <div class="card-body">
                 <form class="form" method="post" action="store.php" >
                     <div class="form-input">
                         <label for="nama_tipe">Nama Tipe</label>
-                        <input class="input" name="nama_tipe" id="nama_tipe" type="text" placeholder="Nama Tipe">
+                        <input class="input" required name="nama_tipe" id="nama_tipe" type="text" placeholder="Nama Tipe">
                     </div>
 
                     <div class="form-input">

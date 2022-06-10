@@ -39,7 +39,7 @@ mysqli_close($conn);
     </div>
     <div class="container">
         <div class="card card-50 card-mid">
-            <div class="card-title">Data Tipe</div>
+            <div class="card-title">Data Tipe Olahraga</div>
             <div class="card-body">
                 <a href="add.php" class="btn btn-primary">Add Data</a>
                 <table class="table" >
