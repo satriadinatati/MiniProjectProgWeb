@@ -6,6 +6,7 @@
 	<link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 </head>
+<?php require_once('functions.php') ?>
 <body>
 	<!-- Header start -->
 	<header>
@@ -53,6 +54,7 @@
 		</div>		
 		<h2 id="courses" class="title" >Our Courses</h2>
 		<div class="posts">
+
 			<div class="conten">
 				<div class="img" style="background: url('assets/tumb/zumba-basic.jpeg');"></div>
 				<div class="text">

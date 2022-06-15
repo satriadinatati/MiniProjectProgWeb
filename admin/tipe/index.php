@@ -13,7 +13,7 @@
 
 <?php
 session_start();
-if ($_SESSION==null) {
+if ($_SESSION['username']==null) {
     header("location: ../auth/login.php");
 }
 ?>
@@ -34,7 +34,7 @@ mysqli_close($conn);
             <a href="../olahraga">Post Olahraga</a>
         </div>
         <div class="right">
-            <a href="">Logout</a>
+            <a href="../auth/logout.php">Logout</a>
         </div>
     </div>
     <div class="container">

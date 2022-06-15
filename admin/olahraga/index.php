@@ -13,14 +13,15 @@
 
 <?php
 session_start();
-if ($_SESSION==null) {
+if ($_SESSION['username']==null) {
     header("location: ../auth/login.php");
 }
 ?>
 
 <?php 
 // get data from table
-$sql = "SELECT * FROM olahraga ";
+$sql = "SELECT * FROM olahraga ".
+        "INNER JOIN tipe ON tipe.id_tipe = olahraga.id_tipe;";
 $query = mysqli_query($conn, $sql);
 
 // function untuk get alat olahraga
@@ -51,7 +52,7 @@ function get_alat($id_olahraga, $conn){
             <a href="index.php">Post Olahraga</a>
         </div>
         <div class="right">
-            <a href="">Logout</a>
+            <a href="../auth/logout.php">Logout</a>
         </div>
     </div>
     <div class="container">
@@ -63,6 +64,7 @@ function get_alat($id_olahraga, $conn){
                     <thead>
                         <th>No</th>
                         <th>Nama Olahraga</th>
+                        <th>Tipe Olahraga</th>
                         <th>Level</th>
                         <th>Deskripsi</th>
                         <th>Alat</th>
@@ -77,6 +79,7 @@ function get_alat($id_olahraga, $conn){
                         <tr>
                             <td><?php echo $no  ?></td>
                             <td><?php echo $row['nama_olahraga'] ?></td>
+                            <td><?php echo $row['nama_tipe'] ?></td>
                             <td><?php echo $row['level'] ?></td>
                             <td><?php echo $row['deskripsi'] ?></td>
                             <td><?php get_alat($row['id_olahraga'], $conn) ?></td>

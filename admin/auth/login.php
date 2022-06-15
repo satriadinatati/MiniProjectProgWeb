@@ -28,9 +28,9 @@
                     <input type="submit" value="Login" class="btn btn-primary" >
                 </div>
 
-                <div class="form-input" >
-                    <?php if ($_SESSION!=null) {
-                        echo $_SESSION['err']!=null ? $_SESSION['err']:"";
+                <div class="form-input" style="color: red;">
+                    <?php if (isset($_SESSION['err'])) {
+                        echo $_SESSION['err'];
                     } ?>
                 </div>
 

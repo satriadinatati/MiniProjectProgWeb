@@ -9,7 +9,7 @@
 </head>
 <?php
 session_start();
-if ($_SESSION==null) {
+if ($_SESSION['username']==null) {
     header("location: ../auth/login.php");
 }
 require_once("../config.php");

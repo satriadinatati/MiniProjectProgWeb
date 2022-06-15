@@ -9,7 +9,7 @@
 </head>
 <?php
 session_start();
-if ($_SESSION==null) {
+if ($_SESSION['username']==null) {
     header("location: ../auth/login.php");
 }
 ?>
@@ -22,7 +22,7 @@ if ($_SESSION==null) {
             <a href="../olahraga">Post Olahraga</a>
         </div>
         <div class="right">
-            <a href="">Logout</a>
+            <a href="../auth/logout.php">Logout</a>
         </div>
     </div>
     

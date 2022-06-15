@@ -23,7 +23,7 @@ if ($_SESSION['username']==null) {
             <a href="olahraga">Post Olahraga</a>
         </div>
         <div class="right">
-            <a href="">Logout</a>
+            <a href="auth/logout.php">Logout</a>
         </div>
     </div>
 
