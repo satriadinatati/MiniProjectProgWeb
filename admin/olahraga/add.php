@@ -8,11 +8,12 @@
     <link rel="stylesheet" type="text/css" href="../../assets/css/admin.css">
 </head>
 <?php
-// session_start();
-// if ($_SESSION==null) {
-//     header("location: auth/login.php");
-// }
+session_start();
+if ($_SESSION==null) {
+    header("location: ../auth/login.php");
+}
 require_once("../config.php");
+
 // get data tipe
 $sql = "SELECT * FROM tipe";
 $tipe = mysqli_query($conn, $sql);
@@ -114,7 +115,8 @@ $alat = mysqli_query($conn, $sql);
 
                     <div class="form-input">
                         <label for="thumbnail">Thumbnail</label>
-                        <input class="input" required name="thumbnail" id="thumbnail" type="file" placeholder="Durasi Olahraga">
+                        <input id="image-form" class="input" name="thumbnail" id="thumbnail" type="file" placeholder="Image">
+                        <img id="img-show" width="200" src="">
                     </div>
 
                     <div class="form-input">
@@ -126,6 +128,15 @@ $alat = mysqli_query($conn, $sql);
     </div>
 </body>
 <script>
+
+    var imageForm = document.getElementById('image-form');
+
+    imageForm.onchange = () =>{
+        let [file] = imageForm.files;
+        document.getElementById("img-show").src = URL.createObjectURL(file);
+    }
+
+
     function validasicekbox(event){
         let pass = false
         let all = document.getElementsByClassName("checkbox")

@@ -8,10 +8,10 @@
     <link rel="stylesheet" type="text/css" href="../../assets/css/admin.css">
 </head>
 <?php
-// session_start();
-// if ($_SESSION==null) {
-//     header("location: auth/login.php");
-// }
+session_start();
+if ($_SESSION==null) {
+    header("location: ../auth/login.php");
+}
 ?>
 <body>
     <div class="header">

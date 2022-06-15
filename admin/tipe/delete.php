@@ -1,6 +1,9 @@
 <?php 
 require_once("../config.php");
-
+session_start();
+if ($_SESSION==null) {
+    header("location: ../auth/login.php");
+}
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
     // echo $id;

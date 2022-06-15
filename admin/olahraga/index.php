@@ -12,10 +12,10 @@
  ?>
 
 <?php
-// session_start();
-// if ($_SESSION==null) {
-//     header("location: auth/login.php");
-// }
+session_start();
+if ($_SESSION==null) {
+    header("location: ../auth/login.php");
+}
 ?>
 
 <?php 

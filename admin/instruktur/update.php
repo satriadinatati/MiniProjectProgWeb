@@ -1,5 +1,9 @@
 <?php 
 require_once("../config.php");
+session_start();
+if ($_SESSION==null) {
+    header("location: ../auth/login.php");
+}
 if (isset($_POST)) {
 	$id_instruktur = $_POST['id_instruktur'];
 	$nama_instruktur = $_POST['nama_instruktur'];

@@ -7,27 +7,34 @@
     <title>Login</title>
     <link rel="stylesheet" href="../../assets/css/admin.css">
 </head>
+<?php session_start(); ?>
 <body>
     <div class="container">
 
         <div class="card card-30 card-mid">
             <div class="card-title">Login</div>
-            <div class="form">
+            <form class="form" action="validate.php" method="post" >
                 <div class="form-input">
                     <label for="username">Username</label>
-                    <input class="input" id="username" type="text" placeholder="Username">
+                    <input class="input" name="username" id="username" type="text" placeholder="Username">
                 </div>
 
                 <div class="form-input">
                     <label for="password">Password</label>
-                    <input class="input" id="password" type="password" placeholder="Password">
+                    <input class="input" name="password" id="password" type="password" placeholder="Password">
                 </div>
 
                 <div class="form-input">
                     <input type="submit" value="Login" class="btn btn-primary" >
                 </div>
 
-            </div>
+                <div class="form-input" >
+                    <?php if ($_SESSION!=null) {
+                        echo $_SESSION['err']!=null ? $_SESSION['err']:"";
+                    } ?>
+                </div>
+
+            </form>
         </div>
         
     </div>

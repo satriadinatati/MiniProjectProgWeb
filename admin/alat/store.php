@@ -1,6 +1,9 @@
 <?php
 require_once("../config.php");
-
+session_start();
+if ($_SESSION==null) {
+    header("location: ../auth/login.php");
+}
 if (isset($_POST)) {
 	$nama_alat = $_POST['nama_alat'];
 	$sql = "INSERT INTO alat VALUES('','".$nama_alat."')";

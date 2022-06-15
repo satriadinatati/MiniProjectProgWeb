@@ -1,10 +1,14 @@
 <?php
 require_once("../config.php");
+session_start();
+if ($_SESSION==null) {
+    header("location: ../auth/login.php");
+}
 if (isset($_POST)) {
-	echo "<pre>";
-	print_r($_POST);
-	print_r($_FILES);
-	echo "</pre>";
+	// echo "<pre>";
+	// print_r($_POST);
+	// print_r($_FILES);
+	// echo "</pre>";
 
 	$id_tipe = $_POST['id_tipe'];
 	$id_instruktur = $_POST['id_instruktur'];
@@ -46,6 +50,7 @@ if (isset($_POST)) {
     	}
     }else{
     	echo "File thumbnail tidak valid, gunakan format jpg atau jpeg dengan ukuran maksimal 1mb";
+    	die();
     }
     header("Location: index.php");
 
