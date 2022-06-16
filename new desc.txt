@@ -1,0 +1,77 @@
+- senam
+*aerobik
+> Level:beginner
+> deskripsi:Senam aerobik adalah satu di antara jenis olahraga senam yang memadukan
+ berbagai gerakan yang aktif, kreatif, dan energik. Senam aerobik bisa terpola atau tidak terpola
+juga diiringi dengan musik yang memiliki ketentuan ritmis dan kesinambungan.
+> alat:speaker 
+> instruktur: 
+> link video: https://youtu.be/vSThNlE1snE
+> durasi:15 menit
+
+*senam trampolin
+> Level:inter
+> deskripsi:Trampolin merupakan macam-macam senam yang mirip dengan senam akrobatik, bedanya 
+pesenam biasanya akan melakukan akrobat di atas trampolin. Senam trampolin melatih ketangkasan, keberanian, dan menguatkan otot kaki.
+> alat:trampolin dan speaker
+> instruktur:
+> link video: https://youtu.be/YSEfI_F11VM
+> durasi:30 menit
+
+*zumba
+> Level:advance
+> deskripsi:Zumba merupakan salah satu senam yang berfungsi membakar kalori secara efektif.Senam zumba 
+memiliki gerakan yang senada dengan irama musik yang mengiringi, serta dilakukan dalam durasi waktu tertentu. 
+> alat:speaker
+> instruktur:
+> link video: https://youtu.be/Od1r9XbR5g0
+> durasi:15 menit
+
+
+- workout
+*TRX Training
+> Level:advance
+> deskripsi:TRX merupakan kepanjangan dari total body resistance exercise. Olahraga yang satu ini 
+mengandalkan bobot tubuh yang bertumpu pada tali yang terjulur dari langit-langit.
+> alat:trx kit suspension
+> instruktur:
+> link video:https://youtu.be/utsUU0dC2fU
+> durasi:40 menit
+
+*Dumbbell Bent-Over Row
+> Level:beginer
+> deskripsi:Dumbbell Bent-Over Row melatih hampir seluruh otot punggung, baik punggung bagian atas 
+maupun punggung bagian bawah. Diperlukan keseimbangan, kekuatan, dan postur yang tidak cukup baik akan meningkatkan resiko cedera.
+> alat: dumbbell
+> instruktur:
+> link video: https://youtu.be/Sa0sBKUiOvU
+> durasi: 10 menit
+
+
+- aletik
+*lompat jauh
+> Level: beginer
+> deskripsi: Lompat jauh atau long jump adalah suatu teknik melompat untuk membawa titik berat tubuh selama mungkin 
+di udara untuk mencapai jarak sejauh-jauhnya
+> alat: bak pasir
+> instruktur:
+> link video:https://youtu.be/s6Hq6TY409w
+> durasi: 3 menit
+
+*lempar cakram
+> Level: inter
+> deskripsi:Lempar cakram atau discus throw mengharuskan seorang atlet melempar 
+cakram logam dan harus mendarat di dalam bagian tertentu yang sudah ditandai
+> alat: cakram
+> instruktur:
+> link video: https://youtu.be/dKyL9e_Ojnw
+> durasi: 9 menit
+
+*tolak peluru
+> Level: inter
+> deskripsi: Tolak peluru atau shot put adalah olahraga atletik dengan gerakan menolak atau mendorong bola logam, 
+bukan melempar seperti cabang lainnya. Gerakan ini mengandalkan kekuatan satu tangan.
+> alat: bola logam
+> instruktur:
+> link video: https://youtu.be/TkCd_eX-OF4
+> durasi: 9 menit

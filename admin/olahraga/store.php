@@ -22,13 +22,15 @@ if (isset($_POST)) {
 	// print_r($splitUrl);
 	// die();
 
+	//ambil ekstensi file thumbnail
+
 	$extension = pathinfo($_FILES['thumbnail']['name'], PATHINFO_EXTENSION);
 	$newFileName = date("ddmYHis").'.'.$extension;
 
 	$pathUpload = "../../assets/tumb/".$newFileName;
 
 	$isValid=false;
-    if (($extension=='jpg' || $extension=='jpeg') && $_FILES['thumbnail']['size']<=2000000) {
+    if (($extension=='jpg' || $extension=='jpeg' || $extension=='JPEG' || $extension=='JPG') && $_FILES['thumbnail']['size']<=2000000) {
         $isValid=true;
     }
     if ($isValid) {

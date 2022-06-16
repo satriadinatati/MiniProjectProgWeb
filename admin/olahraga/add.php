@@ -44,7 +44,8 @@ $alat = mysqli_query($conn, $sql);
         <div class="card card-50 card-mid">
             <div class="card-title">Tambah Data Post Olahraga</div>
             <div class="card-body">
-                <form id="form" onsubmit="validasicekbox(event)" class="form" method="post" action="store.php" enctype="multipart/form-data" >
+                <form id="form" onsubmit="validate(event)" class="form" method="post" action="store.php" enctype="multipart/form-data" >
+                    
                     <div class="form-input">
                         <label for="nama_olahraga">Nama Olahraga</label>
                         <input class="input" required name="nama_olahraga" id="nama_olahraga" type="text" placeholder="Nama Olahraga">
@@ -137,7 +138,7 @@ $alat = mysqli_query($conn, $sql);
     }
 
 
-    function validasicekbox(event){
+    function validate(event){
         let pass = false
         let all = document.getElementsByClassName("checkbox")
         for (elem of all){

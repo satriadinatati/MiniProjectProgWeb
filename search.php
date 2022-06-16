@@ -6,7 +6,7 @@ $key = $_GET['key'];
 $sql = "SELECT * FROM olahraga ".
 		"INNER JOIN tipe ON tipe.id_tipe = olahraga.id_tipe ".
 		"INNER JOIN instruktur ON instruktur.id_instruktur = olahraga.id_instruktur ".
-		"WHERE nama_olahraga LIKE '".$key."' OR  nama_tipe LIKE '".$key."' OR level LIKE '".$key."';";
+		"WHERE nama_olahraga LIKE '%".$key."%' OR  nama_tipe LIKE '%".$key."%' OR level LIKE '%".$key."%';";
 $all = mysqli_query($conn, $sql);
 print_r($all==null);
 // die();
@@ -54,7 +54,7 @@ print_r($all==null);
 <!-- Main Start -->
 
 <main style="min-height: 500px;" >
-	<h2 id="courses" class="title" >Search</h2>
+	<h2 id="courses" class="title" >Hasil Pencarian '<?php echo $_GET['key'] ?>'</h2>
 	<div class="posts" style="margin: auto; width: 40%;" >
 		<?php if (mysqli_num_rows($all)==0) :?>
 
