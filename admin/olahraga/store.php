@@ -28,7 +28,7 @@ if (isset($_POST)) {
 	$pathUpload = "../../assets/tumb/".$newFileName;
 
 	$isValid=false;
-    if (($extension=='jpg' || $extension=='jpeg') && $_FILES['thumbnail']['size']<=1000000) {
+    if (($extension=='jpg' || $extension=='jpeg') && $_FILES['thumbnail']['size']<=2000000) {
         $isValid=true;
     }
     if ($isValid) {
@@ -49,7 +49,7 @@ if (isset($_POST)) {
     		}
     	}
     }else{
-    	echo "File thumbnail tidak valid, gunakan format jpg atau jpeg dengan ukuran maksimal 1mb";
+    	echo "File thumbnail tidak valid, gunakan format jpg atau jpeg dengan ukuran maksimal 2mb";
     	die();
     }
     header("Location: index.php");
