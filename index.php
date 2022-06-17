@@ -11,8 +11,7 @@ $sql = "SELECT id_tipe FROM olahraga ".
 $tipeOlahraga = mysqli_query($conn, $sql);
 
 ?>
-<div class="banner">
-	</div>
+<div class="banner"></div>
 	<div class="banner-text">
 		An Instant Tutorial for <br>
 		Getting Your Body Keep in Fit Condition <br><br>
@@ -43,7 +42,7 @@ $tipeOlahraga = mysqli_query($conn, $sql);
 			<div class="img" style="background: url('<?php echo explode('../../', $row['thumbnail'])[1] ?>');"></div>
 			<div class="text">
 				<h3><?php echo $row['nama_olahraga'].' - '.$row['nama_tipe']." [".$row['level']."]" ?></h3>
-				<p><?php echo substr($row['deskripsi'],0,150); ?>...</p>
+				<p><?php echo substr($row['deskripsi'],0,100); ?>...</p>
 			<div class="action">
 				<a href="detail.php?id=<?php echo $row['id_olahraga'] ?>"  class="btn">Detail</a>
 			</div>
